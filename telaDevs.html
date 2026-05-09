@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--framework tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Devs</title>
 </head>
-<body>
-    
+
+<body class="bg-[#111b21] text-white min-h-screen flex flex-col">
+    <header class="bg-gray-700 px-4 py-3">
+        <nav class="flex items-center justify-between">
+            <div class="app flex items-center gap-2"> <!--Não é possível acessar tela de contatos sem login-->
+                <img src="img/whatsapp.png" alt="logoWhats" class="w-10 h-10 rounded-full bg-gray-500">
+                <span class="text-2xl font-bold text-green-400">Whatsapp</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="">
+                    <img src="img/cam.png" alt="camera" class="w-8 h-8">
+                </a>
+                <a href="">
+                    <img src="img/config.png" alt="config" class="w-8 h-8">
+                </a>
+                <a href="login.html">
+                    <img src="img/sair.png" alt="sair" class="w-8 h-8">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-1 p-6 flex flex-col gap-8">
+        <section class="flex flex-col gap-5">
+            <h1 class="text-3xl font-bold">Desenvolvedores:</h1>
+            <div class="bg-gray-700 p-4 rounded-xl flex items-center gap-4 hover:bg-gray-600 transition duration-200">
+                <img src="img/cadu.jpeg" alt="Carlos Eduardo" class="w-16 h-16 rounded-full object-cover">
+                <span class="text-xl font-bold">Carlos Eduardo</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-xl flex items-center gap-4 hover:bg-gray-600 transition duration-200">
+                <img src="img/cleison.jpeg" alt="Cleison" class="w-16 h-16 rounded-full object-cover">
+                <span class="text-xl font-bold">Cleison</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-xl flex items-center gap-4 hover:bg-gray-600 transition duration-200">
+                <img src="img/jv.jpg" alt="Joao Victor" class="w-16 h-16 rounded-full object-cover">
+                <span class="text-xl font-bold">João Victor</span>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-xl flex items-center gap-4 hover:bg-gray-600 transition duration-200">
+                <img src="img/joatan.jpeg" alt="Joatan" class="w-16 h-16 rounded-full object-cover">
+                <span class="text-xl font-bold">Joatan</span>
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-4">
+            <h2 class="text-2xl font-bold">Referências:</h2>
+            <a href="https://youtu.be/wU7KKo6VtEU?si=R4LVmvSWGqmf81QI" class="bg-gray-700 p-4 rounded-xl flex flex-col hover:bg-gray-600 transition duration-200">
+                <span class="font-bold text-green-400">Vídeo do professor:</span>
+                <span class="text-sm text-gray-300 break-all">https://youtu.be/wU7KKo6VtEU?si=R4LVmvSWGqmf81QI</span>
+            </a>
+            <a href="https://tailwindcss.com/" class="bg-gray-700 p-4 rounded-xl flex flex-col hover:bg-gray-600 transition duration-200">
+                <span class="font-bold text-green-400">Acesso ao Tailwind:</span>
+                <span class="text-sm text-gray-300 break-all">https://tailwindcss.com/</span>
+            </a>
+            <a href="https://www.remove.bg/pt-br" class="bg-gray-700 p-4 rounded-xl flex flex-col hover:bg-gray-600 transition duration-200">
+                <span class="font-bold text-green-400">Removedor de fundo:</span>
+                <span class="text-sm text-gray-300 break-all">https://www.remove.bg/pt-br</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-gray-700 p-4 flex items-center gap-3 flex-wrap justify-center">
+        <img src="img/IFRNsc_logo.png" alt="logoIF" class="w-16 h-16 bg-white rounded">
+        <span class="tituloTrabalho font-bold">Trabalho de Programação para Internet(PPI)</span>
+        <span class="prof">Prof. Marcelo Figueiredo Barbosa Júnior</span>
+        <a href="telaDevs.html" class="devs text-green-400">
+            <span>Área dos desenvolvedores</span>
+        </a>
+    </footer>
+
 </body>
 </html>
