@@ -3,53 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--framework tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>ChatContatos</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="ctts.html" class="app">
-                <img src="img/whatsapp.png" alt="logoWhats">
-                <span>Whatsapp</span>
+
+<body class="bg-[#111b21] text-white min-h-screen flex flex-col">
+    <header class="bg-gray-700 px-4 py-3">
+        <nav class="flex items-center justify-between">
+            <a href="ctts.html" class="app flex items-center gap-2">
+                <img src="img/whatsapp.png" alt="logoWhats" class="w-10 h-10 rounded-full bg-gray-500">
+                <span class="text-2xl font-bold text-green-400">Início</span>
             </a>
-           <a href="">
-                <img src="img/cam.png" alt="camera">
-            </a>
-            <a href="">
-                <img src="img/config.png" alt="config">
-            </a>
-            <a href="login.html">
-                <img src="img/sair.png" alt="sair">
-            </a>
-        </nav>        
+            <div class="flex items-center gap-4">
+                <a href="">
+                    <img src="img/cam.png" alt="camera" class="w-8 h-8">
+                </a>
+                <a href="">
+                    <img src="img/config.png" alt="config" class="w-8 h-8">
+                </a>
+                <a href="login.html">
+                    <img src="img/sair.png" alt="sair" class="w-8 h-8">
+                </a>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <h1>Lista de Contatos</h1>
-        <section class="ListaContatos">
-            <a href="chatVader.html" class="contato">
-                <img src="" alt="DarthVader">
-                <div class="info">
-                    <span class="nomeCtt">Darth Vader</span>
-                    <span class="msg">Não... Eu sou seu pai!</span>
+    <main class="flex-1 p-6">
+        <h1 class="text-3xl font-bold mb-6">Lista de Contatos</h1>
+        <section class="ListaContatos flex flex-col gap-4">
+            <a href="chatVader.html" class="contato bg-gray-700 p-4 rounded-xl flex items-center gap-4 hover:bg-gray-600">
+                <img src="img/DarthVader.png" alt="DarthVader" class=" w-16 h-16 rounded-full bg-gray-500">
+                <div class="info flex flex-col">
+                    <span class="nomeCtt text-xl font-bold">Darth Vader</span>
+                    <span class="msg text-sm text-gray-300">Não... Eu sou seu pai!</span>
                 </div>
             </a>
-            <a href="chatChewie.html" class="contato">
-                <img src="" alt="Chewie">
-                <div class="info">
-                    <span class="nomeCtt">Chewie</span>
-                    <span class="msg">RRAAAAAARRRWHH</span>
+            <a href="chatChewie.html" class="contato bg-gray-700 p-4 rounded-xl flex items-center gap-4 hover:bg-gray-600">
+                <img src="img/Chewie.png" alt="Chewie" class="w-16 h-16 rounded-full bg-gray-500">
+                <div class="info flex flex-col">
+                    <span class="nomeCtt text-xl font-bold">Chewie</span>
+                    <span class="msg text-sm text-gray-300">RRAAAAAARRRWHH</span>
                 </div>
             </a>
         </section>
     </main>
 
-    <footer>
-        <img src="img/IFRNsc_logo.png" alt="logoIF">
-        <span class="tituloTrabalho">Trabalho de Programação para Internet(PPI)</span>
+    <footer class="bg-gray-700 p-4 flex items-center gap-3 flex-wrap justify-center">
+        <img src="img/IFRNsc_logo.png" alt="logoIF" class="w-16 h-16 bg-white rounded">
+        <span class="tituloTrabalho font-bold">Trabalho de Programação para Internet(PPI)</span>
         <span class="prof">Prof. Marcelo Figueiredo Barbosa Júnior</span>
-        <a href="telaDevs.html" class="devs">
-            <span>Área dos desenvolvedores</span> <!-- Pôr referências -->
+        <a href="telaDevs.html" class="devs text-green-400">
+            <span>Área dos desenvolvedores</span>
         </a>
     </footer>
 </body>

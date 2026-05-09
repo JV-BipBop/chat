@@ -3,57 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat</title>
+    <!--framework tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Chat Darth Vader</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="ctts.html" class="app">
-                <img src="" alt="logoWhats">
-                <span>Whatsapp</span>
+
+<body class="bg-[#111b21] text-white min-h-screen flex flex-col">
+    <header class="bg-gray-700 px-4 py-3">
+        <nav class="flex items-center justify-between">
+            <a href="ctts.html" class="app flex items-center gap-2">
+                <img src="img/whatsapp.png" alt="logoWhats" class="w-10 h-10 rounded-full bg-gray-500">
+                <span class="text-2xl font-bold text-green-400">Início</span>
             </a>
-            <a href="">
-                <img src="" alt="camera">
-            </a>
-            <a href="">
-                <img src="" alt="config">
-            </a>
-            <a href="login.html">
-                <img src="" alt="sair">
-            </a>
-        </nav>        
+            <div class="flex items-center gap-4">
+                <a href="">
+                    <img src="img/cam.png" alt="camera" class="w-8 h-8">
+                </a>
+                <a href="">
+                    <img src="img/config.png" alt="config" class="w-8 h-8">
+                </a>
+                <a href="login.html">
+                    <img src="img/sair.png" alt="sair" class="w-8 h-8">
+                </a>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <div>
-            <img src="" alt="DarthVader">
-            <h1>Darth Vader</h1>
+    <main class="flex-1 flex flex-col">
+        <div class="bg-gray-800 px-4 py-3 flex items-center gap-3">
+            <img src="img/DarthVader.png" alt="DarthVader" class="w-12 h-12 rounded-full bg-gray-500">
+            <h1 class="text-xl font-bold">Darth Vader</h1>
         </div>
-        <section class="mensagens">
-            <article class="msgRecebida">
+        <section class="flex-1 p-4 flex flex-col gap-3 overflow-y-auto">
+            <article class="self-start bg-gray-700 p-3 rounded-xl max-w-[75%]">
                 <p>Obi Wan não lhe contou o que aconteceu com seu pai?</p>
             </article>
-            <article class="msgRecebida">
-                <h3>você</h3>
+            <article class="self-end bg-green-600 p-3 rounded-xl max-w-[75%]">
                 <p>Me contou o suficiente. Que você matou ele</p>
             </article>
-            <article class="msgRecebida">
+            <article class="self-start bg-gray-700 p-3 rounded-xl max-w-[75%]">
                 <p>Não... Eu sou seu pai!</p>
             </article>
         </section>
 
-        <form action="" class="areaEnvio">
-            <textarea id="envio" placeholder="Digite uma mensagem..."></textarea>
-            <input type="button" value="Enviar" id="btnEnviar">
+        <form class="bg-gray-700 p-3 flex items-center gap-2">
+            <textarea id="envio" placeholder="Digite uma mensagem..." class="flex-1 bg-gray-600 p-2 rounded outline-none resize-none h-10"></textarea>
+            <input type="button" value="Enviar" id="btnEnviar" class="bg-green-500 px-4 py-2 rounded font-bold hover:bg-green-400">
         </form>
     </main>
 
-    <footer>
-        <img src="img/IFRNsc_logo.png" alt="logoIF">
-        <span class="tituloTrabalho">Trabalho de Programação para Internet(PPI)</span>
+    <footer class="bg-gray-700 p-4 flex items-center gap-3 flex-wrap justify-center">
+        <img src="img/IFRNsc_logo.png" alt="logoIF" class="w-16 h-16 bg-white rounded">
+        <span class="tituloTrabalho font-bold">Trabalho de Programação para Internet(PPI)</span>
         <span class="prof">Prof. Marcelo Figueiredo Barbosa Júnior</span>
-        <a href="telaDevs.html" class="devs">
-            <span>Área dos desenvolvedores</span> <!-- Pôr referências -->
+        <a href="telaDevs.html" class="devs text-green-400">
+            <span>Área dos desenvolvedores</span>
         </a>
     </footer>
 </body>
